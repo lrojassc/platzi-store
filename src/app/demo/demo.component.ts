@@ -15,14 +15,17 @@ export class DemoComponent implements OnInit {
 
   power = 10;
 
+  // tslint:disable-next-line: typedef
   ngOnInit() {
     // code
   }
 
+  // tslint:disable-next-line: typedef
   addItem() {
     this.items.push('nuevo item');
   }
 
+  // tslint:disable-next-line: typedef
   deleteItem(index: number) {
     this.items.splice(index, 1);
   }

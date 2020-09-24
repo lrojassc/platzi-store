@@ -33,18 +33,22 @@ export class ProductComponent implements OnInit, DoCheck, OnDestroy {
     console.log(changes);
   }*/
 
+  // tslint:disable-next-line: typedef
   ngOnInit() {
     console.log('3. ngOnInit');
   }
 
+  // tslint:disable-next-line: typedef
   ngDoCheck() {
     console.log('4. ngDoCheck');
   }
 
+  // tslint:disable-next-line: typedef
   ngOnDestroy() {
     console.log('5. ngOnDestroy');
   }
 
+  // tslint:disable-next-line: typedef
   addCart() {
     console.log('añadir al carrito');
     this.productClicked.emit(this.product.id);
