@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Product } from '../../../product.model';
+import { Product } from './../../models/product.model';
 
 @Injectable({
   providedIn: 'root'
@@ -54,12 +54,10 @@ export class ProductsService {
 
   constructor() { }
 
-  // tslint:disable-next-line: typedef
   getAllProducts() {
     return this.products;
   }
 
-  // tslint:disable-next-line: typedef
   getProduct(id: string) {
     return this.products.find(item => id === item.id);
   }

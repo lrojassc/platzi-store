@@ -13,11 +13,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   constructor() { }
 
-  // tslint:disable-next-line: typedef
   ngOnInit() {
   }
 
-  // tslint:disable-next-line: typedef
   ngAfterViewInit() {
     this.mySwiper = new Swiper('.swiper-container');
   }
