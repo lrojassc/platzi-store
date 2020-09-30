@@ -22,8 +22,7 @@ import { MaterialModule } from './../material/material.module';
     ExponentialPipe,
     HighlightDirective,
     HeaderComponent,
-    FooterComponent,
-    CartComponent
+    FooterComponent
   ],
   imports: [
     CommonModule,
