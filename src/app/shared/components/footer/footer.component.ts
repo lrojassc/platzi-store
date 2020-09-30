@@ -19,7 +19,7 @@ export class FooterComponent implements OnInit {
     // .subscribe(value => {
     //   console.log(value);
     // });
-   }
+  }
 
   ngOnInit() {
   }
