@@ -34,14 +34,13 @@ export class ProductDetailComponent implements OnInit {
   }
 
   createProduct() {
-    const newProduct = {
+    const newProduct: Product = {
       id: '222',
-      title: 'Nuevo desde angular',
+      title: 'nuevo desde angular',
       image: 'assets/images/banner-1.jpg',
-      price: 30000,
-      description: 'Nuevo propducto'
+      price: 3000,
+      description: 'nuevo producto'
     };
-
     this.productsService.createProduct(newProduct)
     .subscribe(product => {
       console.log(product);
@@ -50,8 +49,8 @@ export class ProductDetailComponent implements OnInit {
 
   updateProduct() {
     const updateProduct: Partial<Product> = {
-      price: 5555,
-      description: 'Actualizacion del Nuevo producto con el itutlo'
+      price: 555555,
+      description: 'edicion titulo'
     };
     this.productsService.updateProduct('2', updateProduct)
     .subscribe(product => {

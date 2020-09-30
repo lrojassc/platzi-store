@@ -12,7 +12,7 @@ export class ProductsService {
 
   constructor(
     private http: HttpClient
-  ) {}
+  ) { }
 
   getAllProducts() {
     return this.http.get<Product[]>(`${environment.url_api}/products`);
